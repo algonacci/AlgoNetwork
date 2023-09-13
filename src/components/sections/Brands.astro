@@ -1,0 +1,51 @@
+---
+import Container from "../shared/Container.astro";
+import Title from "../shared/Title.astro";
+
+// Define constants for your logos and associated data
+const logos = [
+  {
+    imageUrl: "/logos/mayar.webp",
+    projectName: "Mayar",
+    companyUrl: "https://mayar.id",
+  },
+  {
+    imageUrl: "/logos/sukabumi.png",
+    projectName: "Pemkot Sukabumi",
+    companyUrl: "https://sukabumikota.go.id/",
+  },
+  {
+    imageUrl: "/logos/dinkes-dki.png",
+    projectName: "Dinkes DKI",
+    companyUrl: "https://dinkes.jakarta.go.id/",
+  },
+];
+---
+
+<section>
+  <Container className="space-y-8">
+    <div class="text-center max-w-3xl mx-auto">
+      <Title>Trusted by companies and organizations like</Title>
+    </div>
+    <div class="flex justify-center flex-wrap gap-4">
+      {
+        logos.map((logo, index) => (
+          <div
+            key={index}
+            class="p-8 sm:p-10 rounded-xl bg-body border border-box-border group"
+          >
+            <a href={logo.companyUrl} target="_blank" rel="noopener noreferrer">
+              <img
+                src={logo.imageUrl}
+                width="150"
+                height="90"
+                alt={logo.projectName}
+                class="h-9 sm:h-12 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105"
+              />
+            </a>
+          </div>
+        ))
+      }
+    </div>
+  </Container>
+</section>
