@@ -39,58 +39,64 @@ import Title from "../shared/Title.astro";
         an unprecedented pace. Our mission is to help you achieve your goals
         swiftly and effectively, leaving no room for compromise.
       </Paragraph>
-      <div
-        class="pt-8 grid grid-cols-2 items-center gap-4 max-w-3xl md:max-w-[none]"
-      >
-        <Info
-          description="Technology-enabled business empowerment, value creation via innovation, and dedication"
-          title="Mission"
-        >
-          <span slot="icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-4 h-4 sm:w-5 sm:h-5"
+      <div class="pt-8 max-w-3xl md:max-w-[none]">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+          <div class="md:order-2">
+            <Info
+              description="Technology-enabled business empowerment, value creation via innovation, and dedication"
+              title="Mission"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-              ></path>
-            </svg>
-          </span>
-        </Info>
-        <Info
-          description="Pioneering innovation in technology solutions to forge a brighter and more interconnected future"
-          title="Vision"
-        >
-          <span slot="icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-4 h-4 sm:w-5 sm:h-5"
+              <span slot="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 sm:w-5 sm:h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+                  ></path>
+                </svg>
+              </span>
+            </Info>
+          </div>
+          <div class="md:order-1">
+            <Info
+              description="Pioneering innovation in technology solutions to forge a brighter and more interconnected future"
+              title="Vision"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-              ></path>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-            </svg>
-          </span>
-        </Info>
+              <span slot="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 sm:w-5 sm:h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  ></path>
+                </svg>
+              </span>
+            </Info>
+          </div>
+        </div>
       </div>
+      
     </div>
   </Container>
 </section>
