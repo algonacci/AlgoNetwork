@@ -1,3 +1,11 @@
+---
+import { businessUnits } from "../../data/businessUnits";
+
+const foundedYear = 2023;
+const currentYear = new Date().getFullYear();
+const yearsInBusiness = Math.max(currentYear - foundedYear, 0);
+---
+
 <section
   class="relative flex flex-col items-center justify-center pt-12 sm:pt-16 md:pt-20 lg:pt-24 xl:pt-32 text-center"
 >
@@ -11,7 +19,7 @@
       <dd
         class="order-first text-3xl font-semibold tracking-tight text-heading-1"
       >
-        3
+        {businessUnits.length}
       </dd>
     </div>
     <div class="flex flex-col bg-box-bg p-8">
@@ -33,11 +41,11 @@
       </dd>
     </div>
     <div class="flex flex-col bg-box-bg p-8">
-      <dt class="text-sm font-semibold leading-6 text-gray-300">Year</dt>
+      <dt class="text-sm font-semibold leading-6 text-gray-300">Years</dt>
       <dd
         class="order-first text-3xl font-semibold tracking-tight text-heading-1"
       >
-        1
+        {yearsInBusiness}
       </dd>
     </div>
   </dl>

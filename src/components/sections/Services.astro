@@ -3,31 +3,7 @@ import Service from "../cards/Service.astro";
 import Container from "../shared/Container.astro";
 import Paragraph from "../shared/Paragraph.astro";
 import Title from "../shared/Title.astro";
-
-// Define an array of service objects
-const services = [
-  {
-    title: "Braincore",
-    description:
-      "A research lab focusing on high technology like AI, IoT, Blockchain, Networking Engineering and Cyber Security to increase the quality of life",
-    iconSrc: "/logos/Braincore.png",
-    businessUrl: "https://braincore.id",
-  },
-  {
-    title: "Megalogic",
-    description:
-      "A typical software house that create application on Frontend, Backend, and Mobile, also provide Quality Assurance solutions",
-    iconSrc: "/logos/WHITE_LOGOMARK.png",
-    businessUrl: "https://megalogic.id",
-  },
-  {
-    title: "BIZZAGI",
-    description:
-      "An agency that handle various services like Digital Campaign, Ads, SEO, Content Creation, Marketplace Optimization, and Market Research",
-    iconSrc: "/logos/BIZZAGI.png",
-    businessUrl: "https://bizzagi.com",
-  },
-];
+import { businessUnits } from "../../data/businessUnits";
 ---
 
 <section id="services">
@@ -39,9 +15,9 @@ const services = [
         services.
       </Paragraph>
     </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+    <div class="grid sm:grid-cols-2 gap-6 lg:gap-8">
       {
-        services.map((service, index) => (
+        businessUnits.map((service, index) => (
           <a href={service.businessUrl} target="_blank">
             <Service title={service.title} description={service.description}>
               <span slot="icon">
