@@ -27,4 +27,18 @@ export const businessUnits = [
     iconSrc: "/logos/omniflow.png",
     businessUrl: "https://omniflow.id",
   },
+  {
+    title: "Revolta",
+    description:
+      "A managed IT services provider helping businesses with network, server & cloud, cybersecurity, helpdesk, backup & disaster recovery, and IT monitoring",
+    iconSrc: "/logos/revolta.svg",
+    businessUrl: "https://revolta.id",
+  },
+  {
+    title: "Orvix",
+    description:
+      "A managed service provider for cloud and infrastructure — VPS, hosting, DevOps CI/CD, backup & DR, monitoring, security, private & hybrid cloud",
+    iconSrc: "/logos/orvix.svg",
+    businessUrl: "https://orvix.id",
+  },
 ] as const;
